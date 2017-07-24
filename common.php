@@ -41,7 +41,7 @@ if (file_exists("parameters/id.php")) {
 //Appel des fonctions
 require_once ("includes/config.php");
 require_once ("includes/functions.php");
-require_once ("includes/mysql.php");
+require_once ("includes/sqlite.php");
 require_once ("includes/log.php");
 require_once ("includes/galaxy.php");
 require_once ("includes/user.php");
@@ -99,11 +99,12 @@ if (file_exists('parameters/key.php')) {
 //Connexion à la base de donnnées
 if (!defined("INSTALL_IN_PROGRESS")) {
     // appel de l instance en cours
-    $db = sql_db::getInstance($db_host, $db_user, $db_password, $db_database);
+    //$db = sql_db::getInstance($db_host, $db_user, $db_password, $db_database);
 
-    if (!$db->db_connect_id) {
+    $db = new sql_db();
+    /*if (!$db->db_connect_id) {
         die("Impossible de se connecter à la base de données");
-    }
+    }*/
 
     //Récupération et encodage de l'adresse ip
     $user_ip = $_SERVER['REMOTE_ADDR'];

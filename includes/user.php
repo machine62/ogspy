@@ -101,7 +101,7 @@ function user_login()
                 $request .= " where statistic_name = 'connection_server'";
                 $db->sql_query($request);
                 if ($db->sql_affectedrows() == 0) {
-                    $request = "insert ignore into " . TABLE_STATISTIC .
+                    $request = "insert into " . TABLE_STATISTIC .
                         " values ('connection_server', '1')";
                     $db->sql_query($request);
                 }
@@ -857,7 +857,7 @@ function user_get_nb_active_users()
     $request .= " FROM ".TABLE_USER;
     $request .= " WHERE user_active='1'";
     $result = $db->sql_query($request);
-    $number = $db->sql_numrows();
+    $number = $db->sql_numrows($result);
 
     return($number);
 }
