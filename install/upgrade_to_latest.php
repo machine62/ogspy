@@ -290,7 +290,13 @@ switch ($ogsversion) {
 	        `expiration_date` VARCHAR(15) NOT NULL,
 	        PRIMARY KEY (id)
         ) DEFAULT CHARSET = utf8;";
-
+		
+	$requests[] = "UPDATE " . TABLE_CONFIG . " SET config_value = '3.3.5' WHERE config_name = 'version'";
+		
+	$ogsversion = '3.3.5';
+        $up_to_date = true;	
+		
+	break;
     case '3.3.5-alpha3':
 
         $requests[] = "UPDATE " . TABLE_CONFIG . " SET config_value = '3.3.5' WHERE config_name = 'version'";
