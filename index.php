@@ -1,5 +1,8 @@
 <?php
 session_start();
+
+use Ogsteam\Ogspy\Core;
+
 /**
  * Fichier principal d'ogspy
  * @package OGSpy
@@ -94,7 +97,53 @@ switch ($pub_action) {
             user_logout();
             break;
 
-        //----------------------------------------//
+
+
+    //----------------------------------------//
+    //---Test---//
+    //----------------------------------------//
+    case "test" :
+        // test layout, page simple
+        $view = new Core\Template("./asset/tpl/Login_Tpl.php");
+
+        $view->title = "Test";
+        //pas de css ou js supplementaire
+        $view->content = "Test <hr /> <br /> 1<br />2<br />3<br />";
+
+        echo $view->render('main.php');
+
+
+
+        break;
+
+    case "test2" :
+        // test imbrication layout
+        $moduleTable = new Core\Template("./asset/tpl/Table_Tpl.php");
+        $moduleTable->add("tr" , "<td>1 __________________________</td><td>1</td>");
+        $moduleTable->add("tr" , "<th>2</th><th>__________________________2</th>");
+
+        $moduleTableVue = $moduleTable->render();
+
+
+        // test layout, page simple
+        $view = new Core\Template("./asset/tpl/Login_Tpl.php");
+        $view->title = "Test";
+        //pas de css ou js supplementaire
+
+        $content = "Test <hr /> <br /> 1<br />2<br />3<br />";
+        $content .= $moduleTableVue;
+        //ici le tpl pourrai faire un foreach sur content ....
+
+        $view->content = $content;
+
+        echo $view->render('main.php');
+
+
+
+        break;
+
+
+    //----------------------------------------//
         //---Administration---//
         //----------------------------------------//
         case "administration" :
