@@ -3,7 +3,9 @@
     "description": "This is a tool to collect data from a game and provide statistics",
     "license": "GPL-2.0",
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "tooltipster/tooltipster" : "4.2.*"
+    },
     "autoload": {
         "psr-4": {
             "Ogsteam\\Ogspy\\Core\\": "core/",

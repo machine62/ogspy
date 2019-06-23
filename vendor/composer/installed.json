@@ -1,1 +1,46 @@
-[]
+[
+    {
+        "name": "tooltipster/tooltipster",
+        "version": "4.2.6",
+        "version_normalized": "4.2.6.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/iamceege/tooltipster.git",
+            "reference": "32689c6e96d9acc38803c66f30d900e5496404f7"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/iamceege/tooltipster/zipball/32689c6e96d9acc38803c66f30d900e5496404f7",
+            "reference": "32689c6e96d9acc38803c66f30d900e5496404f7",
+            "shasum": ""
+        },
+        "suggest": {
+            "components/jquery": ">=1.10"
+        },
+        "time": "2018-01-29T18:37:38+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Caleb Jacob",
+                "homepage": "https://plus.google.com/+CalebJacob?rel=author"
+            },
+            {
+                "name": "Louis Ameline",
+                "homepage": "https://github.com/louisameline"
+            }
+        ],
+        "description": "Tooltipster is a flexible and extensible jQuery plugin for modern tooltips.",
+        "homepage": "http://iamceege.github.io/tooltipster/",
+        "keywords": [
+            "jquery",
+            "plugin",
+            "replacement",
+            "tooltip"
+        ]
+    }
+]

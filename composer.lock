@@ -1,0 +1,60 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "e43bde731dd194b942d1daa001e20cf2",
+    "packages": [
+        {
+            "name": "tooltipster/tooltipster",
+            "version": "4.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iamceege/tooltipster.git",
+                "reference": "32689c6e96d9acc38803c66f30d900e5496404f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iamceege/tooltipster/zipball/32689c6e96d9acc38803c66f30d900e5496404f7",
+                "reference": "32689c6e96d9acc38803c66f30d900e5496404f7",
+                "shasum": ""
+            },
+            "suggest": {
+                "components/jquery": ">=1.10"
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Caleb Jacob",
+                    "homepage": "https://plus.google.com/+CalebJacob?rel=author"
+                },
+                {
+                    "name": "Louis Ameline",
+                    "homepage": "https://github.com/louisameline"
+                }
+            ],
+            "description": "Tooltipster is a flexible and extensible jQuery plugin for modern tooltips.",
+            "homepage": "http://iamceege.github.io/tooltipster/",
+            "keywords": [
+                "jquery",
+                "plugin",
+                "replacement",
+                "tooltip"
+            ],
+            "time": "2018-01-29T18:37:38+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

@@ -122,6 +122,15 @@ for ($i = 1; $i <= $nb_colonnes_ally; $i++) {
                            maxlength="20"
                            value="<?php echo $color_ally_e[$i - 1]; ?>"> <?php echo help("color_picker" . $i); ?></th>
             </tr>
+            <tr>
+                <th>
+                    <span style="color: <?php echo $color_ally_e[$i - 1]; ?>; "><?php echo($lang['ADMIN_DISPLAY_ALLY_COLOR']); ?><?php echo $i; ?></span>
+                    <br/>
+
+                    <div class="z"><i><?php echo($lang['ADMIN_DISPLAY_ALLY_COLORDESC']); ?></i></div>
+                </th>
+                <th><input type="color" value="#ff0000"></th>
+            </tr>
         <?php } ?>
         <tr>
             <th><?php echo($lang['ADMIN_DISPLAY_ALLY_GVIEW']); ?></th>

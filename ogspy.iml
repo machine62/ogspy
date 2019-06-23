@@ -2,7 +2,12 @@
 <module type="WEB_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/model" isTestSource="false" packagePrefix="Ogsteam\Ogspy\Model\" />
+      <sourceFolder url="file://$MODULE_DIR$/core/helper" isTestSource="false" packagePrefix="Ogsteam\Ogspy\Helper\" />
+      <sourceFolder url="file://$MODULE_DIR$/core/abstract" isTestSource="false" packagePrefix="Ogsteam\Ogspy\Abstracts\" />
+      <sourceFolder url="file://$MODULE_DIR$/core" isTestSource="false" packagePrefix="Ogsteam\Ogspy\Core\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/tooltipster/tooltipster" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
@@ -10,9 +15,11 @@
       <library name="PHP" type="php">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/tooltipster/tooltipster" />
         </CLASSES>
         <SOURCES>
           <root url="file://$MODULE_DIR$/vendor/composer" />
+          <root url="file://$MODULE_DIR$/vendor/tooltipster/tooltipster" />
         </SOURCES>
       </library>
     </orderEntry>
